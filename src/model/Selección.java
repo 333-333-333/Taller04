@@ -28,6 +28,10 @@ public class Selección {
         return this.RutaImagen;
     }
 
+    public String getRutaJugadores() {
+        return this.RutaJugadores;
+    }
+
     public int getRanking() {
         return this.Ranking;
     }

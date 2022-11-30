@@ -41,4 +41,8 @@ public class Jugador {
         this.Posición = posición;
     }
 
+    @Override
+    public String toString() {
+        return this.Número + ";" + this.Número + ";" + this.Posición.getTag();
+    }
 }

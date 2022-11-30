@@ -13,10 +13,17 @@ public abstract class GUIFactory extends JFrame {
         this.setResizable(false);
         this.setSize(ancho, largo);
         this.setLocationRelativeTo(null);
+        this.setLayout(null);
     }
+
+    protected abstract void cargarElementos();
 
     protected abstract void crearBotones();
 
+
+    protected abstract void crearLabels();
+
+    protected abstract void crearComboBox();
 
 
 }
