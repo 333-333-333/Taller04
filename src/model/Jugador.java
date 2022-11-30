@@ -4,19 +4,17 @@ import java.util.ArrayList;
 
 public class Jugador {
 
-    private String Nombre;
     private int Número;
+    private String Nombre;
     private Posición Posición;
-    private ArrayList<Jugador> Jugadores;
 
-    public Jugador(String nombre,
-                   int número,
-                   Posición posición,
-                   ArrayList<Jugador> jugadores) {
-        this.Nombre = nombre;
+
+    public Jugador(int número,
+                   String nombre,
+                   Posición posición) {
         this.Número = número;
+        this.Nombre = nombre;
         this.Posición = posición;
-        this.Jugadores = jugadores;
     }
 
     public String getNombre() {
@@ -43,11 +41,4 @@ public class Jugador {
         this.Posición = posición;
     }
 
-    public ArrayList<Jugador> getJugadores() {
-        return this.Jugadores;
-    }
-
-    public void setJugadores(ArrayList<Jugador> jugadores) {
-        this.Jugadores = jugadores;
-    }
 }

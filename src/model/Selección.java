@@ -1,14 +1,23 @@
 package model;
 
+import java.util.ArrayList;
+
 public class Selección {
 
-    private String Nombre, RutaImagen;
+    private String Nombre, RutaImagen, RutaJugadores;
     private int Ranking;
+    private ArrayList<Jugador> Jugadores;
 
-    public Selección(String nombre, String rutaImagen, int ranking) {
+    public Selección(String nombre,
+                     int ranking,
+                     String rutaImagen,
+                     String rutaJugadores,
+                     ArrayList<Jugador> jugadores){
         this.Nombre = nombre;
-        this.RutaImagen = rutaImagen;
         this.Ranking = ranking;
+        this.RutaImagen = rutaImagen;
+        this.RutaJugadores = rutaJugadores;
+        this.Jugadores = jugadores;
     }
 
     public String getNombre() {
@@ -23,4 +32,11 @@ public class Selección {
         return this.Ranking;
     }
 
+    public ArrayList<Jugador> getJugadores() {
+        return this.Jugadores;
+    }
+
+    public void setJugadores(ArrayList<Jugador> jugadores) {
+        this.Jugadores = jugadores;
+    }
 }

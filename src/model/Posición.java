@@ -2,8 +2,16 @@ package model;
 
 public enum Posición {
 
-    GK, DF, MF, FW;
+    GK("GK"), DF("DF"), MF("MF"), FW("FW");
 
-    private Posición() {
+    private String Tag;
+
+    private Posición(String tag) {
+        this.Tag = tag;
     }
+
+    public String getTag() {
+        return this.Tag;
+    }
+
 }
